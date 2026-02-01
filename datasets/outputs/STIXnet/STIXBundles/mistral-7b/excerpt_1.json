@@ -1,0 +1,946 @@
+{
+    "type": "bundle",
+    "id": "bundle--d85759f7-bacd-4cc7-af18-f27e06df7844",
+    "spec_version": "2.1",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "name": "ACTOR Extractor",
+            "description": "LLM driven CTI extractor",
+            "identity_class": "organization",
+            "sectors": [
+                "education"
+            ],
+            "contact_information": "Digital Security Group, University of Oslo"
+        },
+        {
+            "type": "intrusion-set",
+            "spec_version": "2.1",
+            "id": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "name": "An intrusion set",
+            "description": "Modify as seen fit"
+        },
+        {
+            "type": "report",
+            "id": "report--1e9e3de4-409c-4edc-a4e7-2ba5b7411e7d",
+            "spec_version": "2.1",
+            "name": "test1_0_metadata_output.json",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "report_type": [
+                "threat-report"
+            ],
+            "object_refs": [
+                "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+                "threat-actor--b332ec4f-1825-4efe-a1cb-9cb3d71ae0ae",
+                "process--5709abfd-673b-45ec-a2de-a5c95b06abec",
+                "process--4dafd4e1-434a-4188-b274-4281afe3db70",
+                "process--84dda760-5362-4633-a7e8-7f84eedad38a",
+                "process--7aae356e-5955-4c03-b069-4770651fc962",
+                "process--2d52e5df-bdf1-46ea-a28f-1562081729a6",
+                "process--5255b89c-6c1f-4697-b868-4abfe5fbcdbe",
+                "process--b9d63ce1-9f68-4114-b186-275c3bd23482",
+                "tool--56b06c55-4cea-4320-b078-ae6d9e6c18b8",
+                "indicator--628c9cf8-d5f2-4ab5-b0a7-a2683fe52a40",
+                "relationship--4cdbf0a3-8c33-4dc7-8f27-ce0e0ec1673d",
+                "tool--b0781651-0910-4164-ba25-b0c724b5dc8c",
+                "indicator--17cbefcc-b597-4b2b-b696-732ec40120da",
+                "relationship--ce10b4ae-c25a-46f0-9de5-2265c1e66a0d",
+                "tool--0a82c8d8-4466-4a49-998e-981ac15d0eae",
+                "indicator--cf8f48b3-e61e-4207-9735-d4f1a399fa3d",
+                "relationship--f9c2ce0f-13b9-42fc-b533-633dc6c407db",
+                "tool--6c4fe0d0-f889-4416-ab2f-10064bc5aa60",
+                "indicator--79d64021-689a-49c4-86c8-42d7a52e25d5",
+                "relationship--4aaa6de0-00cf-4c77-a613-4b45efc25fbf",
+                "tool--a0ad8339-dc57-4c61-be7b-80bd6e88a083",
+                "indicator--c3a0d850-4aed-4d73-9fae-179b8711ed17",
+                "relationship--16314561-386a-491d-ac38-b82bdd499c5d",
+                "tool--9c9fd5f4-903a-4c00-9ee0-260f5c2b0c97",
+                "indicator--ab815c3a-3360-4300-a4ba-56510596d1e8",
+                "relationship--b2158606-ec8d-4299-b43a-89eb0cc0bb00",
+                "tool--a1378d2c-e6e0-4db7-8b78-f87277133519",
+                "indicator--406e5bea-e3a0-444d-aba8-d7a8098c7ecb",
+                "relationship--2e37a351-5703-49f8-8e04-0716db6f7fa4",
+                "tool--a5da7768-1703-4ac2-96a8-854b6617e50e",
+                "indicator--3f276c2c-dc34-46f9-86ad-5f8f0198881e",
+                "relationship--3fffc2bf-3469-4e02-bd49-377bf9e91be8",
+                "tool--ed1f2d71-c6e4-42f6-af53-c3b2a58c0953",
+                "indicator--5f1b1a57-66e3-482f-8b78-be05c30a9a04",
+                "relationship--b604b42a-6125-4a3c-bc6d-4ca9d4844648",
+                "attack-pattern--9ca53b4a-69f6-4c3c-b21d-127348206313",
+                "attack-pattern--d72a87bb-d6fa-4f08-bbd2-0286197b8539",
+                "attack-pattern--e0b41e8f-f3a6-4515-9662-98cdf69e98e7",
+                "attack-pattern--61be0345-daac-46a9-ab83-2ecd76fd3ad9",
+                "attack-pattern--d3656545-e759-4913-80fc-ce565fd47f7d",
+                "attack-pattern--e9d8576c-62a0-433a-b36f-84afaefbbe00",
+                "attack-pattern--e4d32527-218c-4ad6-bc3d-b0a9fb02dca2",
+                "attack-pattern--5feb3f01-8ce0-443b-a9eb-597ceac509a5",
+                "attack-pattern--4f212813-820f-45a2-ac8f-01cbb9994483",
+                "attack-pattern--8adea334-2615-4b34-a0f0-fe222878acfd",
+                "attack-pattern--8a8c85c8-8ba6-4277-a1d9-a8a500fca497",
+                "attack-pattern--4bca2f1c-223b-4480-839b-068d11724ecd"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--5e2c98e4-3401-4291-b318-1145051c7e88",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "derived-from",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "report--1e9e3de4-409c-4edc-a4e7-2ba5b7411e7d",
+            "description": "This intrusion set was generated by the ACTOR LLM Workflow, by processing the threat report text and transforming it into STIX 2.1"
+        },
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--b332ec4f-1825-4efe-a1cb-9cb3d71ae0ae",
+            "name": "Naikon",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "aliases": [
+                "Naikon"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--20b11691-eedc-48a8-887b-d66ce53f5202",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "threat-actor--b332ec4f-1825-4efe-a1cb-9cb3d71ae0ae",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "taskmgr.exe",
+            "type": "process",
+            "id": "process--5709abfd-673b-45ec-a2de-a5c95b06abec",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b42f4107-4cdb-434f-a146-4bd157c21ad2",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--5709abfd-673b-45ec-a2de-a5c95b06abec",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The entity, taskmgr.exe, is relevant to the intrusion set (Naikon) as it has been renamed by Naikon to appear as a legitimate version of Task Manager, allowing the group to disguise malicious activities within a seemingly harmless system process."
+        },
+        {
+            "name": "Google Chrome",
+            "type": "process",
+            "id": "process--4dafd4e1-434a-4188-b274-4281afe3db70",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--372f4463-46b4-432b-afaf-04c7b9c115d5",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--4dafd4e1-434a-4188-b274-4281afe3db70",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Google Chrome is relevant to the Naikon intrusion set as it has been disguised by Naikon as one of their malicious programs, suggesting that they use Google Chrome executables as a means to deliver or conceal their malware."
+        },
+        {
+            "name": "Adobe",
+            "type": "process",
+            "id": "process--84dda760-5362-4633-a7e8-7f84eedad38a",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--574b6e1e-b17b-499b-b4e3-77f4b6b8b62e",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--84dda760-5362-4633-a7e8-7f84eedad38a",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The entity, Adobe, is relevant to the intrusion set Naikon as they have disguised malicious programs as Adobe executables during their operations."
+        },
+        {
+            "name": "VMware",
+            "type": "process",
+            "id": "process--7aae356e-5955-4c03-b069-4770651fc962",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d5cc9195-9fa7-48ac-a382-45445c1507f8",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--7aae356e-5955-4c03-b069-4770651fc962",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "VMware is relevant to the Naikon intrusion set as it has disguised malicious programs as VMware executables during operations, suggesting that Naikon may have targeted or intended to target VMware systems."
+        },
+        {
+            "name": "schtasks.exe",
+            "type": "process",
+            "id": "process--2d52e5df-bdf1-46ea-a28f-1562081729a6",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5337e327-3ea2-44a9-8df6-3282fdc7b4de",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--2d52e5df-bdf1-46ea-a28f-1562081729a6",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The entity, schtasks.exe, is relevant to the intrusion set (Naikon) as it has been used by Naikon for lateral movement within compromised networks."
+        },
+        {
+            "name": "netsh advfirewall firewall",
+            "type": "process",
+            "id": "process--5255b89c-6c1f-4697-b868-4abfe5fbcdbe",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--212ea18c-1e1a-48a9-a3d0-3e4d8ddc2729",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--5255b89c-6c1f-4697-b868-4abfe5fbcdbe",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The Netsh advfirewall firewall is relevant to the Naikon intrusion set as it is one of the tools used by Naikon to discover local firewall settings within compromised networks."
+        },
+        {
+            "name": "netsh interface show",
+            "type": "process",
+            "id": "process--b9d63ce1-9f68-4114-b186-275c3bd23482",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--13a985e8-7019-4984-9707-95ebf9e487bd",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "process--b9d63ce1-9f68-4114-b186-275c3bd23482",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Netsh interface show is a tool used by the Naikon intrusion set to discover network interface settings within compromised networks, contributing to their operations and lateral movement."
+        },
+        {
+            "name": "Task Manager",
+            "type": "tool",
+            "id": "tool--56b06c55-4cea-4320-b078-ae6d9e6c18b8",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d99ef693-66e4-40cd-9fca-325c182d4116",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--56b06c55-4cea-4320-b078-ae6d9e6c18b8",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The Task Manager is relevant to the Naikon intrusion set as it has been renamed by Naikon to appear as a legitimate version, potentially allowing them to load malicious DLLs and gain unauthorized access."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Task Manager",
+            "spec_version": "2.1",
+            "id": "indicator--628c9cf8-d5f2-4ab5-b0a7-a2683fe52a40",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[id='tool--56b06c55-4cea-4320-b078-ae6d9e6c18b8']"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4cdbf0a3-8c33-4dc7-8f27-ce0e0ec1673d",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--628c9cf8-d5f2-4ab5-b0a7-a2683fe52a40",
+            "target_ref": "tool--56b06c55-4cea-4320-b078-ae6d9e6c18b8",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "Google Chrome",
+            "type": "tool",
+            "id": "tool--b0781651-0910-4164-ba25-b0c724b5dc8c",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--90b29ac9-08ca-4fea-98d4-064a48731c30",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--b0781651-0910-4164-ba25-b0c724b5dc8c",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Google Chrome is relevant to the Naikon intrusion set as it has been disguised by the group as one of their malicious programs during their operations."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Google Chrome",
+            "spec_version": "2.1",
+            "id": "indicator--17cbefcc-b597-4b2b-b696-732ec40120da",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[*]:id = 'tool--b0781651-0910-4164-ba25-b0c724b5dc8c' AND tool[*]:name = 'Google Chrome'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ce10b4ae-c25a-46f0-9de5-2265c1e66a0d",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--17cbefcc-b597-4b2b-b696-732ec40120da",
+            "target_ref": "tool--b0781651-0910-4164-ba25-b0c724b5dc8c",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "Adobe",
+            "type": "tool",
+            "id": "tool--0a82c8d8-4466-4a49-998e-981ac15d0eae",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--53ea778d-b628-44d4-bf73-d56f72097826",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--0a82c8d8-4466-4a49-998e-981ac15d0eae",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Adobe is relevant to the Naikon intrusion set as it is one of the disguises used by the group for their malicious programs, indicating that Adobe software may have been targeted or exploited in Naikon's operations."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Adobe",
+            "spec_version": "2.1",
+            "id": "indicator--cf8f48b3-e61e-4207-9735-d4f1a399fa3d",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[id='tool--0a82c8d8-4466-4a49-998e-981ac15d0eae']"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f9c2ce0f-13b9-42fc-b533-633dc6c407db",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--cf8f48b3-e61e-4207-9735-d4f1a399fa3d",
+            "target_ref": "tool--0a82c8d8-4466-4a49-998e-981ac15d0eae",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "VMware",
+            "type": "tool",
+            "id": "tool--6c4fe0d0-f889-4416-ab2f-10064bc5aa60",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cb63a603-9b3b-4698-acd6-a4a9650d3c17",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--6c4fe0d0-f889-4416-ab2f-10064bc5aa60",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The entity, VMware, is relevant to the intrusion set Naikon as it has been disguised as one of the executables (VMware executables) that Naikon uses to deliver malware in its cyber espionage operations."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for VMware",
+            "spec_version": "2.1",
+            "id": "indicator--79d64021-689a-49c4-86c8-42d7a52e25d5",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[*]:id = 'tool--6c4fe0d0-f889-4416-ab2f-10064bc5aa60'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4aaa6de0-00cf-4c77-a613-4b45efc25fbf",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--79d64021-689a-49c4-86c8-42d7a52e25d5",
+            "target_ref": "tool--6c4fe0d0-f889-4416-ab2f-10064bc5aa60",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "LadonGo scanner",
+            "type": "tool",
+            "id": "tool--a0ad8339-dc57-4c61-be7b-80bd6e88a083",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3a96a314-ce8a-4edb-8f3b-1e803b6ac3eb",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--a0ad8339-dc57-4c61-be7b-80bd6e88a083",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The LadonGo scanner is relevant to the intrusion set Naikon as it is one of the tools Naikon has been observed using for network scanning during their cyber espionage operations."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for LadonGo scanner",
+            "spec_version": "2.1",
+            "id": "indicator--c3a0d850-4aed-4d73-9fae-179b8711ed17",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[id='tool--a0ad8339-dc57-4c61-be7b-80bd6e88a083']"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--16314561-386a-491d-ac38-b82bdd499c5d",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c3a0d850-4aed-4d73-9fae-179b8711ed17",
+            "target_ref": "tool--a0ad8339-dc57-4c61-be7b-80bd6e88a083",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "RoyalRoad exploit builder",
+            "type": "tool",
+            "id": "tool--9c9fd5f4-903a-4c00-9ee0-260f5c2b0c97",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0788f877-12f9-4194-953e-b913c79b01df",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--9c9fd5f4-903a-4c00-9ee0-260f5c2b0c97",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The RoyalRoad exploit builder is relevant to the intrusion set of Naikon as it is a tool used by Naikon to drop a second stage loader, intel.wll, into the Word Startup folder on compromised hosts."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for RoyalRoad exploit builder",
+            "spec_version": "2.1",
+            "id": "indicator--ab815c3a-3360-4300-a4ba-56510596d1e8",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[id='tool--9c9fd5f4-903a-4c00-9ee0-260f5c2b0c97']"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b2158606-ec8d-4299-b43a-89eb0cc0bb00",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ab815c3a-3360-4300-a4ba-56510596d1e8",
+            "target_ref": "tool--9c9fd5f4-903a-4c00-9ee0-260f5c2b0c97",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "netbios scanner",
+            "type": "tool",
+            "id": "tool--a1378d2c-e6e0-4db7-8b78-f87277133519",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d4da4c7c-38b1-449e-995b-d3b23bffbd16",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--a1378d2c-e6e0-4db7-8b78-f87277133519",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The netbios scanner is relevant to the intrusion set Naikon as it is one of the tools used by Naikon for remote machine identification during their cyber espionage operations."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for netbios scanner",
+            "spec_version": "2.1",
+            "id": "indicator--406e5bea-e3a0-444d-aba8-d7a8098c7ecb",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[id='tool--a1378d2c-e6e0-4db7-8b78-f87277133519']"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2e37a351-5703-49f8-8e04-0716db6f7fa4",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--406e5bea-e3a0-444d-aba8-d7a8098c7ecb",
+            "target_ref": "tool--a1378d2c-e6e0-4db7-8b78-f87277133519",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "schtasks.exe",
+            "type": "tool",
+            "id": "tool--a5da7768-1703-4ac2-96a8-854b6617e50e",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dec87361-875d-4b20-b15f-e03c2e693be3",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--a5da7768-1703-4ac2-96a8-854b6617e50e",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "The entity, schtasks.exe, is relevant to the intrusion set (Naikon) as it has been used by Naikon for lateral movement within compromised networks."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for schtasks.exe",
+            "spec_version": "2.1",
+            "id": "indicator--3f276c2c-dc34-46f9-86ad-5f8f0198881e",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[*]:name = 'schtasks.exe' AND tool[*]:id = 'tool--a5da7768-1703-4ac2-96a8-854b6617e50e'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3fffc2bf-3469-4e02-bd49-377bf9e91be8",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3f276c2c-dc34-46f9-86ad-5f8f0198881e",
+            "target_ref": "tool--a5da7768-1703-4ac2-96a8-854b6617e50e",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "WMIC.exe",
+            "type": "tool",
+            "id": "tool--ed1f2d71-c6e4-42f6-af53-c3b2a58c0953",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e72876f8-30d7-4f33-94dc-3627408033b2",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "tool--ed1f2d71-c6e4-42f6-af53-c3b2a58c0953",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "WMIC.exe is relevant to the Naikon intrusion set as it has been used by Naikon for lateral movement within compromised networks."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for WMIC.exe",
+            "spec_version": "2.1",
+            "id": "indicator--5f1b1a57-66e3-482f-8b78-be05c30a9a04",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "pattern": "tool[*].name = 'WMIC.exe'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b604b42a-6125-4a3c-bc6d-4ca9d4844648",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5f1b1a57-66e3-482f-8b78-be05c30a9a04",
+            "target_ref": "tool--ed1f2d71-c6e4-42f6-af53-c3b2a58c0953",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3"
+        },
+        {
+            "name": "PowerShell",
+            "type": "attack-pattern",
+            "id": "attack-pattern--9ca53b4a-69f6-4c3c-b21d-127348206313",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1086"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--43d96b31-a9c4-4a64-8769-23e44b6b6d81",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--9ca53b4a-69f6-4c3c-b21d-127348206313",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon, a state-sponsored cyber espionage group, is relevant to the intrusion set T1086 as they have modified a victim's Windows Run registry to establish persistence, a technique associated with the T1086 'Registry Run Keys / Load Library at Startup' tactic."
+        },
+        {
+            "name": "User Execution",
+            "type": "attack-pattern",
+            "id": "attack-pattern--d72a87bb-d6fa-4f08-bbd2-0286197b8539",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1204"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cf7bf47e-1dab-4228-95c2-ae898248e383",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--d72a87bb-d6fa-4f08-bbd2-0286197b8539",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it is a state-sponsored cyber espionage group, attributed to the Chinese People's Liberation Army, that uses various techniques such as DLL side-loading, malicious email attachments, netbios scanner for remote machine identification, schtasks.exe and WMIC.exe for lateral movement, and LadonGo scanner and RoyalRoad exploit builder for delivering malware, among others."
+        },
+        {
+            "name": "Exfiltration to Code Repository",
+            "type": "attack-pattern",
+            "id": "attack-pattern--e0b41e8f-f3a6-4515-9662-98cdf69e98e7",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1567.001"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6be4f6b6-5674-4424-95d6-2c114a065b03",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--e0b41e8f-f3a6-4515-9662-98cdf69e98e7",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to T1567.001 (DLL Side-loading) as it has been observed using this technique to load malicious DLLs into legitimate executables."
+        },
+        {
+            "name": "Exfiltration to Cloud Storage",
+            "type": "attack-pattern",
+            "id": "attack-pattern--61be0345-daac-46a9-ab83-2ecd76fd3ad9",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1567.002"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a1a78c92-2f8c-44ba-a7e3-c04946f2a070",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--61be0345-daac-46a9-ab83-2ecd76fd3ad9",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "T1567.002, the use of DLL side-loading to load malicious DLL's into legitimate executables, is a technique employed by the state-sponsored cyber espionage group Naikon."
+        },
+        {
+            "name": "Exfiltration to Text Storage Sites",
+            "type": "attack-pattern",
+            "id": "attack-pattern--d3656545-e759-4913-80fc-ce565fd47f7d",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1567.003"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--38aa825a-f739-4d1b-b882-d323618c2f6a",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--d3656545-e759-4913-80fc-ce565fd47f7d",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to T1567.003 (DLL side-loading) as it has been observed using this technique to load malicious DLLs into legitimate executables in its cyber espionage operations."
+        },
+        {
+            "name": "Process Injection",
+            "type": "attack-pattern",
+            "id": "attack-pattern--e9d8576c-62a0-433a-b36f-84afaefbbe00",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1055"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2302e11b-c6b5-4396-828f-dadc493cec79",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--e9d8576c-62a0-433a-b36f-84afaefbbe00",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon, a state-sponsored cyber espionage group, is relevant to the intrusion set T1055 (Lateral Tool Transfer) as they have been observed using various tools such as schtasks.exe, WMIC.exe, and netsh for lateral movement within compromised networks."
+        },
+        {
+            "name": "Bypass User Account Control",
+            "type": "attack-pattern",
+            "id": "attack-pattern--e4d32527-218c-4ad6-bc3d-b0a9fb02dca2",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1088"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5fc8886c-816d-4879-9286-6572b7a578ca",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--e4d32527-218c-4ad6-bc3d-b0a9fb02dca2",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it is a state-sponsored cyber espionage group that uses various tactics such as DLL side-loading, registry manipulation, and email attachments to deliver malware, scanning target networks, and using lateral movement tools like schtasks.exe and WMIC.exe. These techniques are common within the intrusion set."
+        },
+        {
+            "name": "Exfiltration Over C2 Channel",
+            "type": "attack-pattern",
+            "id": "attack-pattern--5feb3f01-8ce0-443b-a9eb-597ceac509a5",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1041"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--831d90a2-f15c-4187-96fb-d0f7fabb32c9",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--5feb3f01-8ce0-443b-a9eb-597ceac509a5",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it is a state-sponsored cyber espionage group that uses various techniques such as DLL side-loading, registry modification, and malicious email attachments to establish persistence, scan target networks, and move laterally within compromised networks. These techniques are commonly associated with the intrusion set."
+        },
+        {
+            "name": "Account Discovery",
+            "type": "attack-pattern",
+            "id": "attack-pattern--4f212813-820f-45a2-ac8f-01cbb9994483",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1087"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--17f0c0cb-c538-40af-853e-c9b9b9186286",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--4f212813-820f-45a2-ac8f-01cbb9994483",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it is a state-sponsored cyber espionage group that uses various techniques such as DLL side-loading, registry modification, and email attachments to deliver malware, scanning target networks, and using lateral movement tools like schtasks.exe and WMIC.exe. These techniques are part of the intrusion set's repertoire."
+        },
+        {
+            "name": "Bypass User Account Control",
+            "type": "attack-pattern",
+            "id": "attack-pattern--8adea334-2615-4b34-a0f0-fe222878acfd",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1088"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1c59d0af-67b7-443d-9ad6-0b9f5a856138",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--8adea334-2615-4b34-a0f0-fe222878acfd",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it is a state-sponsored cyber espionage group that uses various techniques such as DLL side-loading, registry modification, and email attachments to deliver malware, network scanning, and lateral movement within compromised networks. These tactics align with the activities observed in the specified intrusion set."
+        },
+        {
+            "name": "Disabling Security Tools",
+            "type": "attack-pattern",
+            "id": "attack-pattern--8a8c85c8-8ba6-4277-a1d9-a8a500fca497",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1089"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5b1ce213-5678-4173-99d1-04a9ca7949d8",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--8a8c85c8-8ba6-4277-a1d9-a8a500fca497",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it shares multiple tactics, techniques, and procedures (TTPs) with the T1089 intrusion set, including DLL side-loading, renaming malicious services, disguising malicious programs, using netbios scanner for remote machine identification, schtasks.exe for lateral movement, commands such as netsh advfirewall firewall and netsh interface show to discover local settings, and WMIC.exe for lateral movement."
+        },
+        {
+            "name": "Process Discovery",
+            "type": "attack-pattern",
+            "id": "attack-pattern--4bca2f1c-223b-4480-839b-068d11724ecd",
+            "spec_version": "2.1",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1057"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c9494de4-5ca8-4a21-bccc-9a1ad59aa3b3",
+            "created": "2026-02-01T21:34:24.190Z",
+            "modified": "2026-02-01T21:34:24.190Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--bda4b422-fadc-4197-bdbe-bd6a775d4496",
+            "target_ref": "attack-pattern--4bca2f1c-223b-4480-839b-068d11724ecd",
+            "created_by_ref": "identity--210ba72d-48a3-4293-a885-a834b09767d3",
+            "description": "Naikon is relevant to the intrusion set as it is a state-sponsored cyber espionage group that uses various techniques such as DLL side-loading, registry modifications, and email attachments to conduct operations against government, military, and civil organizations in Southeast Asia, and has been linked to the Chinese People’s Liberation Army’s Chengdu Military Region Second Technical Reconnaissance Bureau. Some of the techniques used by Naikon, like DLL side-loading, renaming malicious services, disguising malware as legitimate software, using scanners for network identification, and lateral movement commands, are also associated with T1057."
+        }
+    ]
+}
