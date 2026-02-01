@@ -1,0 +1,27 @@
+{
+  "documents": [
+    {
+      "document_id": "user_0",
+      "title": "0",
+      "pages": [
+        {
+          "page_number": 0,
+          "topics": [
+            "Threat Actor",
+            "Software",
+            "Technique",
+            "Domain",
+            "Email",
+            "Filename",
+            "Directory",
+            "Malware",
+            "IPV4",
+            "IPV6",
+            "Process"
+          ],
+          "text": "Naikon is assessed to be a state-sponsored cyber espionage group attributed to the Chinese People's Liberation Army's (PLA) Chengdu Military Region Second Technical Reconnaissance Bureau (Military Unit Cover Designator 78020). Active since at least 2010, Naikon has primarily conducted operations against government, military, and civil organizations in Southeast Asia, as well as against international bodies such as the United Nations Development Programme (UNDP) and the Association of Southeast Asian Nations (ASEAN). Naikon created the file ohmygod.exe. While Naikon shares some characteristics with APT30, the two groups do not appear to be exact matches. Naikon has modified a victim's Windows Run registry to establish persistence. Naikon has used DLL side-loading to load malicious DLL's into legitimate executables. Naikon renamed a malicious service taskmgr to appear to be a legitimate version of Task Manager. Naikon has disguised malicious programs as Google Chrome, Adobe, and VMware executables. Naikon has used the LadonGo scanner to scan target networks. Naikon has used the RoyalRoad exploit builder to drop a second stage loader, intel.wll, into the Word Startup folder on the compromised host. Naikon has used malicious e-mail attachments to deliver malware. One malware they delivered is evilMa.ps1 which connected to 10.0.0.1. Naikon has used a netbios scanner for remote machine identification. Naikon has used schtasks.exe for lateral movement in compromised networks. Naikon uses commands such as netsh advfirewall firewall to discover local firewall settings. Naikon uses commands such as netsh interface show to discover network interface settings. Naikon has convinced victims to open malicious attachments to execute malware. Naikon has used administrator credentials for lateral movement in compromised networks. Naikon has used WMIC.exe for lateral movement. The domains google.com and uio.no were imitated by Naikon. Naikon has used T1059 and techniques T1044 and T1059.003. The Malware suud.exe created file helloWorld.tmp in the %appdata% directory. The IP address 192.168.0.1 and fe80::d37e:c752:ff3c:b674%10 were detected during this campaign."
+        }
+      ]
+    }
+  ]
+}
