@@ -1,0 +1,738 @@
+{
+    "type": "bundle",
+    "id": "bundle--66df588e-4954-4e72-8aac-b986898cfce5",
+    "spec_version": "2.1",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "name": "ACTOR Extractor",
+            "description": "LLM driven CTI extractor",
+            "identity_class": "organization",
+            "sectors": [
+                "education"
+            ],
+            "contact_information": "Digital Security Group, University of Oslo"
+        },
+        {
+            "type": "intrusion-set",
+            "spec_version": "2.1",
+            "id": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "name": "An intrusion set",
+            "description": "Modify as seen fit"
+        },
+        {
+            "type": "report",
+            "id": "report--05d65415-f8e5-49e4-acb3-2c6b0aa3625a",
+            "spec_version": "2.1",
+            "name": "test1_0_metadata_output.json",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "report_type": [
+                "threat-report"
+            ],
+            "object_refs": [
+                "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+                "threat-actor--640709ce-bcac-4ae9-bd6c-42c0e54e78de",
+                "threat-actor--a466d6a9-4226-4940-88b6-42bdb9832f00",
+                "process--f2cbb0ba-066d-450f-a0e7-748a4c65e09d",
+                "process--3872c39f-d5f2-4b96-b5da-d693f3097ed4",
+                "process--c8798316-5240-4a31-896d-449ca3f46e8b",
+                "tool--60b7504a-94e5-4f66-afcf-cfd4d5edf110",
+                "indicator--4b196ada-d1cc-4578-b92b-b385216aab99",
+                "relationship--4a166474-14d4-4ca3-ab47-4dd8218b5aab",
+                "tool--55672da4-f657-4ed5-abc4-ca7d6f7b04fd",
+                "indicator--435ca677-f873-481d-bfa5-1381f2e62ffc",
+                "relationship--cbd74bfd-d18d-49bf-9b90-99a832c60c6f",
+                "tool--974cfca1-f8b5-4041-bd6b-1cb748c1edac",
+                "indicator--338fb2fa-3ee2-4cb6-a08e-3d9cad2e9082",
+                "relationship--8892da57-35ee-4b5a-8359-12e62a239b4f",
+                "tool--17b5ef56-745e-4bc5-8546-f688f9fbb18f",
+                "indicator--defe3632-16e9-45ea-bb4d-a90d2a21cc61",
+                "relationship--52a40739-49b3-47b8-a278-7b1b70fd8e85",
+                "tool--05507456-c71d-45ec-accf-7c2d90fcc257",
+                "indicator--184acace-37e1-4065-9060-010dcda47e34",
+                "relationship--9290a7d6-63ad-4f97-bcb5-d95fac3b9c45",
+                "tool--70d5d720-e77d-4bb1-b0b8-a2b0ed01b4eb",
+                "indicator--3a0f9abc-d876-4610-a4b8-0c753737605f",
+                "relationship--27c23b7e-2705-4e72-b8e1-6c982f8d7a51",
+                "tool--af428da6-8159-41eb-b44e-863bc4df1fd4",
+                "indicator--f10b0b15-9e73-4028-9b9e-c92d8035fd7d",
+                "relationship--c332eb77-89a6-4b5b-be89-1e19e4bbd3b3",
+                "tool--8f55482a-ddf2-42b6-8911-ec3be3199dfd",
+                "indicator--d809a8b0-8756-4d2d-85fc-a2d8d4fc28ad",
+                "relationship--f6bfdba2-db51-4ff8-be06-3cb7dee3707c",
+                "tool--bd9075f8-be09-4d68-8dbb-5fbbd6790ab8",
+                "indicator--ed7eae9a-956a-4ee0-8d85-87bc5de2536e",
+                "relationship--c01a95f5-c613-439a-bf1a-3a129417cb6d",
+                "tool--ade1edfe-a35a-4775-9a99-6dcd46de6cfd",
+                "indicator--d40d6e9d-1e52-4332-bd37-6989538bab7d",
+                "relationship--5ad6ce38-6288-4cd3-a9ec-1b7dfc04d534",
+                "tool--8d910790-9f82-4188-bac5-eb6b0a3a6ffb",
+                "indicator--702e70a5-53e5-437c-a9e3-fa4d96f1f178",
+                "relationship--f314c739-274d-4720-ad27-30c407578c8b",
+                "tool--7bb4f5d2-ec3b-4976-a463-5dd23051da61",
+                "indicator--fcc05eae-f3c9-4baf-8dbd-e6e57d919c57",
+                "relationship--75711f68-1e19-44e6-a06f-c309a0d0afaf",
+                "tool--d69ad051-923c-4020-aa89-7e5ecaf0a3d3",
+                "indicator--c7833b12-7604-4a1e-98fb-8fedaffaefd7",
+                "relationship--632ada01-f52d-46a7-a870-c3d7b9e9d56d"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--b39d4680-ee71-4cd2-b80a-1f70c4bacaef",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "derived-from",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "report--05d65415-f8e5-49e4-acb3-2c6b0aa3625a",
+            "description": "This intrusion set was generated by the ACTOR LLM Workflow, by processing the threat report text and transforming it into STIX 2.1"
+        },
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--640709ce-bcac-4ae9-bd6c-42c0e54e78de",
+            "name": "Naikon",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "aliases": [
+                "Naikon"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--62c7035a-49de-4385-8393-f7fb315f6c89",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "threat-actor--640709ce-bcac-4ae9-bd6c-42c0e54e78de",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--a466d6a9-4226-4940-88b6-42bdb9832f00",
+            "name": "APT30",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "aliases": [
+                "APT30"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e785a267-adc3-4c94-97d8-06c759c7f8f3",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "threat-actor--a466d6a9-4226-4940-88b6-42bdb9832f00",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "schtasks.exe",
+            "type": "process",
+            "id": "process--f2cbb0ba-066d-450f-a0e7-748a4c65e09d",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7d334f19-2939-416e-8617-322e1cf0dbab",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "process--f2cbb0ba-066d-450f-a0e7-748a4c65e09d",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses schtasks.exe for lateral movement in compromised networks."
+        },
+        {
+            "name": "WMIC.exe",
+            "type": "process",
+            "id": "process--3872c39f-d5f2-4b96-b5da-d693f3097ed4",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cd884cd9-bc28-404f-b18f-37f7ebc6c432",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "process--3872c39f-d5f2-4b96-b5da-d693f3097ed4",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses WMIC.exe as a tool for lateral movement in compromised networks."
+        },
+        {
+            "name": "netsh.exe",
+            "type": "process",
+            "id": "process--c8798316-5240-4a31-896d-449ca3f46e8b",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--711dfc75-5e9f-4e23-b2ba-a147fd00396b",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "process--c8798316-5240-4a31-896d-449ca3f46e8b",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses netsh.exe commands, specifically netsh advfirewall firewall and netsh interface show, to discover local and network interface settings."
+        },
+        {
+            "name": "Windows",
+            "type": "tool",
+            "id": "tool--60b7504a-94e5-4f66-afcf-cfd4d5edf110",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4862c861-9f86-46bb-b869-211c81a1555c",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--60b7504a-94e5-4f66-afcf-cfd4d5edf110",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon utilizes Windows features such as the Run registry, DLL side-loading, and executables like schtasks.exe and WMIC.exe to establish persistence, load malicious code, and facilitate lateral movement within compromised networks."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Windows",
+            "spec_version": "2.1",
+            "id": "indicator--4b196ada-d1cc-4578-b92b-b385216aab99",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'Windows'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4a166474-14d4-4ca3-ab47-4dd8218b5aab",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4b196ada-d1cc-4578-b92b-b385216aab99",
+            "target_ref": "tool--60b7504a-94e5-4f66-afcf-cfd4d5edf110",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "Task Manager",
+            "type": "tool",
+            "id": "tool--55672da4-f657-4ed5-abc4-ca7d6f7b04fd",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--75220be6-63b2-430f-ac0f-bf01301120fd",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--55672da4-f657-4ed5-abc4-ca7d6f7b04fd",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon renamed a malicious service taskmgr to appear as a legitimate version of Task Manager in order to evade detection."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Task Manager",
+            "spec_version": "2.1",
+            "id": "indicator--435ca677-f873-481d-bfa5-1381f2e62ffc",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'Task Manager'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cbd74bfd-d18d-49bf-9b90-99a832c60c6f",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--435ca677-f873-481d-bfa5-1381f2e62ffc",
+            "target_ref": "tool--55672da4-f657-4ed5-abc4-ca7d6f7b04fd",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "Google Chrome",
+            "type": "tool",
+            "id": "tool--974cfca1-f8b5-4041-bd6b-1cb748c1edac",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--27f04230-130a-4aad-87b9-532eabc22b02",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--974cfca1-f8b5-4041-bd6b-1cb748c1edac",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon has disguised malicious programs as Google Chrome executables to facilitate malware delivery."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Google Chrome",
+            "spec_version": "2.1",
+            "id": "indicator--338fb2fa-3ee2-4cb6-a08e-3d9cad2e9082",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'Google Chrome'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8892da57-35ee-4b5a-8359-12e62a239b4f",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--338fb2fa-3ee2-4cb6-a08e-3d9cad2e9082",
+            "target_ref": "tool--974cfca1-f8b5-4041-bd6b-1cb748c1edac",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "Adobe",
+            "type": "tool",
+            "id": "tool--17b5ef56-745e-4bc5-8546-f688f9fbb18f",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--70df4a75-cfa0-47b5-8a92-9c0d588b49d6",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--17b5ef56-745e-4bc5-8546-f688f9fbb18f",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon has disguised malicious programs as Adobe executables to facilitate malware delivery."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Adobe",
+            "spec_version": "2.1",
+            "id": "indicator--defe3632-16e9-45ea-bb4d-a90d2a21cc61",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'Adobe'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--52a40739-49b3-47b8-a278-7b1b70fd8e85",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--defe3632-16e9-45ea-bb4d-a90d2a21cc61",
+            "target_ref": "tool--17b5ef56-745e-4bc5-8546-f688f9fbb18f",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "VMware",
+            "type": "tool",
+            "id": "tool--05507456-c71d-45ec-accf-7c2d90fcc257",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5c4fd980-effa-40bc-9123-15bc5fa5773f",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--05507456-c71d-45ec-accf-7c2d90fcc257",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon disguises its malicious programs as VMware executables to evade detection."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for VMware",
+            "spec_version": "2.1",
+            "id": "indicator--184acace-37e1-4065-9060-010dcda47e34",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'VMware'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9290a7d6-63ad-4f97-bcb5-d95fac3b9c45",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--184acace-37e1-4065-9060-010dcda47e34",
+            "target_ref": "tool--05507456-c71d-45ec-accf-7c2d90fcc257",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "LadonGo",
+            "type": "tool",
+            "id": "tool--70d5d720-e77d-4bb1-b0b8-a2b0ed01b4eb",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--57159ff3-72d1-4c54-a69c-a3f611fb4926",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--70d5d720-e77d-4bb1-b0b8-a2b0ed01b4eb",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon has used the LadonGo scanner to scan target networks."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for LadonGo",
+            "spec_version": "2.1",
+            "id": "indicator--3a0f9abc-d876-4610-a4b8-0c753737605f",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'LadonGo'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--27c23b7e-2705-4e72-b8e1-6c982f8d7a51",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3a0f9abc-d876-4610-a4b8-0c753737605f",
+            "target_ref": "tool--70d5d720-e77d-4bb1-b0b8-a2b0ed01b4eb",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "RoyalRoad",
+            "type": "tool",
+            "id": "tool--af428da6-8159-41eb-b44e-863bc4df1fd4",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fa9c015e-6e0f-411f-b3ac-dad1f889dc9b",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--af428da6-8159-41eb-b44e-863bc4df1fd4",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon has used the RoyalRoad exploit builder to drop a second-stage loader, intel.wll, into the Word Startup folder on compromised hosts."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for RoyalRoad",
+            "spec_version": "2.1",
+            "id": "indicator--f10b0b15-9e73-4028-9b9e-c92d8035fd7d",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'RoyalRoad'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c332eb77-89a6-4b5b-be89-1e19e4bbd3b3",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f10b0b15-9e73-4028-9b9e-c92d8035fd7d",
+            "target_ref": "tool--af428da6-8159-41eb-b44e-863bc4df1fd4",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "Word",
+            "type": "tool",
+            "id": "tool--8f55482a-ddf2-42b6-8911-ec3be3199dfd",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b4202bb1-6da5-4e44-87c0-881b0578b745",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--8f55482a-ddf2-42b6-8911-ec3be3199dfd",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses the RoyalRoad exploit builder to drop a second-stage loader, intel.wll, into the Word Startup folder on compromised hosts as part of their malware delivery process."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for Word",
+            "spec_version": "2.1",
+            "id": "indicator--d809a8b0-8756-4d2d-85fc-a2d8d4fc28ad",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'Word'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f6bfdba2-db51-4ff8-be06-3cb7dee3707c",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d809a8b0-8756-4d2d-85fc-a2d8d4fc28ad",
+            "target_ref": "tool--8f55482a-ddf2-42b6-8911-ec3be3199dfd",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "schtasks.exe",
+            "type": "tool",
+            "id": "tool--bd9075f8-be09-4d68-8dbb-5fbbd6790ab8",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9cff1be4-3aa0-4057-b0d6-8cf03c5ec525",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--bd9075f8-be09-4d68-8dbb-5fbbd6790ab8",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses schtasks.exe for lateral movement in compromised networks."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for schtasks.exe",
+            "spec_version": "2.1",
+            "id": "indicator--ed7eae9a-956a-4ee0-8d85-87bc5de2536e",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'schtasks.exe'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c01a95f5-c613-439a-bf1a-3a129417cb6d",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ed7eae9a-956a-4ee0-8d85-87bc5de2536e",
+            "target_ref": "tool--bd9075f8-be09-4d68-8dbb-5fbbd6790ab8",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "netsh",
+            "type": "tool",
+            "id": "tool--ade1edfe-a35a-4775-9a99-6dcd46de6cfd",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--44756675-661a-4c05-962c-7db5a8a6877a",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--ade1edfe-a35a-4775-9a99-6dcd46de6cfd",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses netsh commands, specifically netsh advfirewall firewall and netsh interface show, to discover local firewall and network interface settings."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for netsh",
+            "spec_version": "2.1",
+            "id": "indicator--d40d6e9d-1e52-4332-bd37-6989538bab7d",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'netsh'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5ad6ce38-6288-4cd3-a9ec-1b7dfc04d534",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d40d6e9d-1e52-4332-bd37-6989538bab7d",
+            "target_ref": "tool--ade1edfe-a35a-4775-9a99-6dcd46de6cfd",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "netsh advfirewall",
+            "type": "tool",
+            "id": "tool--8d910790-9f82-4188-bac5-eb6b0a3a6ffb",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4543390c-8b76-4938-992b-e04bf0a98f14",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--8d910790-9f82-4188-bac5-eb6b0a3a6ffb",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses the netsh advfirewall command to discover local firewall settings during their operations."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for netsh advfirewall",
+            "spec_version": "2.1",
+            "id": "indicator--702e70a5-53e5-437c-a9e3-fa4d96f1f178",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'netsh advfirewall'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f314c739-274d-4720-ad27-30c407578c8b",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--702e70a5-53e5-437c-a9e3-fa4d96f1f178",
+            "target_ref": "tool--8d910790-9f82-4188-bac5-eb6b0a3a6ffb",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "netsh interface",
+            "type": "tool",
+            "id": "tool--7bb4f5d2-ec3b-4976-a463-5dd23051da61",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c4b33074-5426-4018-8a7a-34562811dd22",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--7bb4f5d2-ec3b-4976-a463-5dd23051da61",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses the `netsh interface show` command to discover network interface settings on compromised systems."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for netsh interface",
+            "spec_version": "2.1",
+            "id": "indicator--fcc05eae-f3c9-4baf-8dbd-e6e57d919c57",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'netsh interface'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--75711f68-1e19-44e6-a06f-c309a0d0afaf",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fcc05eae-f3c9-4baf-8dbd-e6e57d919c57",
+            "target_ref": "tool--7bb4f5d2-ec3b-4976-a463-5dd23051da61",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "name": "WMIC.exe",
+            "type": "tool",
+            "id": "tool--d69ad051-923c-4020-aa89-7e5ecaf0a3d3",
+            "spec_version": "2.1",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cec69c4f-695e-4b46-a51d-89e02b27e559",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--da5e160e-837e-4ef2-a469-52305cb0add4",
+            "target_ref": "tool--d69ad051-923c-4020-aa89-7e5ecaf0a3d3",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d",
+            "description": "Naikon uses WMIC.exe to facilitate lateral movement within compromised networks."
+        },
+        {
+            "type": "indicator",
+            "name": "Indicator for WMIC.exe",
+            "spec_version": "2.1",
+            "id": "indicator--c7833b12-7604-4a1e-98fb-8fedaffaefd7",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "pattern": "tool:name = 'WMIC.exe'"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--632ada01-f52d-46a7-a870-c3d7b9e9d56d",
+            "created": "2026-02-01T20:58:33.983Z",
+            "modified": "2026-02-01T20:58:33.983Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c7833b12-7604-4a1e-98fb-8fedaffaefd7",
+            "target_ref": "tool--d69ad051-923c-4020-aa89-7e5ecaf0a3d3",
+            "created_by_ref": "identity--ffc18ccc-fb4d-433e-862f-2bb1a99c7f8d"
+        }
+    ]
+}
