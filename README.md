@@ -102,7 +102,7 @@ The tool currently implements the following SDOs and COOs:
 ## ⚠️ Known Limitations
 * **Attack Patterns:** Limited to explicit ID extraction (T1234). A GraphRAG pipeline for semantic similarity is in development.
 * **Infrastructure:** Infrastructure objects are not yet fully modeled.
-* **Performance:** The workflow is sequential (not parallel) due to local hardware limitations.
+* **Performance:** The workflow is sequential (not parallel) due to local hardware limitations. Bottlenecks are known and a a fix is in progress to make the processing more efficient.
 * **Patterns:** Indicator pattern logic is currently basic and undergoing refinement.
 * **UI:** Terminal-based execution only.
 
