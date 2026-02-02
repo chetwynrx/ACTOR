@@ -1,0 +1,44 @@
+Incident Analysis Report: Operation "Gilded Mirror"
+Incident ID: IR-2026-0402
+
+Date of Report: February 2, 2026
+
+Classification: Confidential
+
+1. Executive Summary
+On January 12, 2026, the Security Operations Center (SOC) detected a sophisticated cyber intrusion targeting the internal financial database of "Aether Global Logistics." The threat actor, designated as PHANTOM-LYNX, utilized a multi-stage attack involving spear-phishing, credential harvesting, and lateral movement. The primary objective appeared to be the exfiltration of sensitive vendor payment data. Through rapid containment protocols, the Incident Response (IR) team successfully isolated the threat before a total data breach occurred, though approximately 4.2 GB of non-encrypted logistics logs were compromised.
+
+2. Initial Detection and Vector
+The attack commenced at 08:42 AM when a senior logistics coordinator received a highly personalized spear-phishing email. The email purported to be an urgent internal audit request from the Chief Financial Officer, containing a link to a "secure" SharePoint document. Forensic analysis later revealed that the link redirected the user to a pixel-perfect replica of the corporate login portal, hosted on a compromised domain (aether-gl0bal-secure.com). The coordinator unknowingly entered their credentials, granting the attacker initial access to the corporate VPN.
+
+3. Footprint and Lateral Movement
+By 09:15 AM, PHANTOM-LYNX had established a persistent presence on the coordinator's workstation using a custom-built Remote Access Trojan (RAT). The attacker bypassed Multi-Factor Authentication (MFA) by utilizing a "push-exhaustion" technique, bombarding the user with notification requests until one was accidentally approved. Once inside, the threat actor deployed PowerShell Empire modules to scout the internal network and identify high-value targets, eventually pivoting from the workstation to a secondary application server via an unpatched SMB vulnerability.
+
+4. Escalation of Privileges
+The turning point of the attack occurred when the adversary successfully harvested a Cached Domain Admin credential from the application server’s memory. Using a Pass-the-Hash (PtH) attack, the threat actor elevated their permissions, effectively gaining "God-mode" access across the primary domain. This allowed them to disable local antivirus logging on several key servers and begin the process of identifying the primary SQL database containing the company’s financial records.
+
+5. Data Staging and Collection
+Between 11:30 AM and 01:00 PM, the actor began "staging" data. Instead of immediately exfiltrating information, which might trigger volume-based alerts, PHANTOM-LYNX used native Windows tools to compress and encrypt selected folders within the C:\Temp directory of a low-traffic print server. This clever obfuscation technique was designed to hide the stolen data in plain sight, making it look like routine administrative maintenance or backup processes.
+
+6. Exfiltration Strategy
+At 01:15 PM, the SOC’s Data Loss Prevention (DLP) system triggered a high-severity alert. The attacker had begun transferring the compressed archives to an external Command and Control (C2) server located in Eastern Europe. The exfiltration was masked using DNS Tunneling, a method where data is broken into small chunks and sent as part of DNS queries. This allowed the traffic to bypass traditional firewalls that were only looking for suspicious HTTP or FTP uploads.
+
+7. Containment and Mitigation
+Upon receiving the DLP alert, the IR team initiated the "Blackout" protocol at 01:28 PM. This involved disconnecting the primary internet gateway and forcing a global password reset for all administrative accounts. The compromised application and print servers were physically isolated from the network to prevent further lateral spread. By 02:00 PM, all identified C2 communication channels were blocked at the firewall level, effectively severing the attacker's control over the environment.
+
+8. Impact Assessment
+Following a thorough forensic audit, it was determined that the "crown jewels"—the encrypted financial database—remained untouched. However, the 4.2 GB of exfiltrated logs contained metadata about shipping routes, vendor names, and internal IP schemas. While not directly financial, this "reconnaissance data" could be used to facilitate more targeted physical or digital attacks in the future. No customer PII (Personally Identifiable Information) was found to be part of the stolen cache.
+
+9. Indicators of Compromise (IOCs)
+The following indicators were identified during the investigation and have been added to the company’s automated blocklist:
+
+Malicious Domain: aether-gl0bal-secure.com
+
+C2 IP Address: 185.159.x.x (Moscow, RU)
+
+File Hash (RAT): e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Registry Key: HKCU\Software\Microsoft\Windows\CurrentVersion\Run\LogitechUpdate
+
+10. Lessons Learned and Recommendations
+The "Gilded Mirror" incident highlighted a critical weakness in our current MFA implementation and patch management for legacy servers. Moving forward, the organization will transition to FIDO2-compliant hardware security keys to eliminate the risk of push-notification fatigue. Additionally, a stricter "Zero Trust" architecture will be implemented to prevent lateral movement, ensuring that a single compromised workstation cannot act as a bridge to the entire domain.
