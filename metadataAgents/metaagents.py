@@ -6,7 +6,6 @@ from typing import List, Optional
 
 from agno.utils.pprint import pprint_run_response
 
-
 class Metadata(BaseModel):
     page_number: int = Field(
         ..., description="This is the current page number."
@@ -50,8 +49,8 @@ topicsDict = {
     "Hash": "Threat intelligence that refers to hash values such as MD5, SHA256, SHA-1 and other hashes.",
     "File": "Threat intelligence that refers to the properties of a file.",
     "Infrastructure": "Threat intelligence that refers to computing resources involved in a threat (e.g., C2 servers).",
-    "IPv4": "Threat intelligence that refers to respective addresses.",
-    "IPv6": "Threat intelligence that refers to respective addresses.",
+    "IPV4": "Threat intelligence that refers to respective addresses.",
+    "IPV6": "Threat intelligence that refers to respective addresses.",
     "MAC": "Threat intelligence that refers to a Media Access Control address.",
     "Malware": "Threat intelligence that refers to harmful software.",
     "Mutex": "Threat intelligence that refers to properties of mutual exclusion objects.",
@@ -85,7 +84,7 @@ for key, value in topicsDict.items():
 
 
 tagger: Agent = Agent(
-        model=Ollama(id="deepseek-r1:8b", options={"temperature": 0.1, "num_ctx":5000}, keep_alive=0),
+        model=Ollama(id="llama3", options={"temperature": 0.1, "num_ctx":3000}, keep_alive=0),
 
         description=f"""
         SUMMARY:
@@ -105,8 +104,8 @@ tagger: Agent = Agent(
                             Hash
                             File
                             Infrastructure
-                            IPv4
-                            IPv6
+                            IPV4
+                            IPV6
                             Location
                             MAC
                             Malware
