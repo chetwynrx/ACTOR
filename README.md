@@ -36,15 +36,12 @@ The system features a robust library of over 20 specialized agents.
 | :--- | :--- |
 | `findThreatActorAgent` | Extracts names of APT groups, cybercriminal gangs, etc. |
 | `createDescriptionAgent` | Creates a summary of why an entity is relevant to an intrusion set. |
-| `reasoning_findTechniqueAgent` | Identifies MITRE ATT&CK IDs (T1234) with structured reasoning. |
-| `Auxiliary_findTechniqueAgent` | Strict pattern matching for MITRE ATT&CK technique IDs. |
 | `findTechniqueIDAgent` | Extracts and validates MITRE ATT&CK technique identifiers. |
 | `checkRelationship` | Identifies if a relationship exists between an actor and an entity. |
 
 ### ☣️ Malware & Technical Agents
 | Agent Name | Description |
 | :--- | :--- |
-| `MalwarePreAnalysisAgent` | Determines if entities are explicitly described as malware. |
 | `MalwareAgent` | Extracts explicitly mentioned malware family names. |
 | `findSoftwareValueAgent` | Identifies utilities, frameworks, and C2 tools. |
 | `findProcessNameAgent` | Identifies process names (e.g., `.exe` files) in suspicious contexts. |
@@ -54,9 +51,6 @@ The system features a robust library of over 20 specialized agents.
 | :--- | :--- |
 | `findDomainNameAgent` | Identifies apex domains, subdomains, wildcards, and IDNs. |
 | `findIPV4Agent` / `findIPV6Agent` | Extracts and validates IPv4 and IPv6 addresses. |
-| `findURLAgent` | Scans for URLs across common protocols (http, ftp, etc.). |
-| `findNetworkTrafficAgent` | Identifies protocols, source/destination IPs, and ports. |
-| `findMacAddressAgent` | Extracts MAC addresses in various formats. |
 | `findEmailAddressAgent` | Extracts email addresses from the intelligence report. |
 
 ### 📂 Forensic & System Agents
@@ -65,9 +59,6 @@ The system features a robust library of over 20 specialized agents.
 | `findFileNameAgent` | Identifies filenames and full system paths. |
 | `findDirectoryAgent` | Identifies Windows and Unix file system directories. |
 | `findRegistryValueAgent` | Extracts Windows Registry keys and specific value names. |
-| `findWindowsRegistryAgent` | Extracts full Windows Registry Key objects with property details. |
-| `findUserAgent` | Identifies user accounts, SIDs, and UIDs. |
-| `findLocationValueAgent` | Extracts geographic data (countries, cities, regions). |
 
 ### 🛠 Utility Agents
 | Agent Name | Description |
