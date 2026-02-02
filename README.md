@@ -11,8 +11,8 @@ This project transforms narrative threat report text into machine-readable intel
 
 ### Core Objectives
 - **Standardization:** Map raw text to the STIX 2.1 data model.
-- **Agentic Logic:** Use specialized AI agents for high-accuracy extraction.
-- **Local Sovereignty:** Powered by **Ollama** and **Agno** to ensure all data stays local.
+- **Agentic Logic:** Use specialized AI agents for CTI extraction.
+- **Local Sovereignty:** Powered by **Ollama** and **Agno** offline to ensure all data stays local.
 
 ---
 
